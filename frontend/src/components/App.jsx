@@ -17,7 +17,6 @@ export const App = () => {
 
   useEffect(() => {
     if (!token) return;
-    console.log(token);
     dispatch(fetchCurrentUser());
   }, [dispatch, token]);
 
